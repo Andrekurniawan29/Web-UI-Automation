@@ -35,7 +35,10 @@ describe ('Google Search Test', function () {
 
         await sortDropDown.click()
         await sort.click()
-    
+ 
+        // command menunggu 
+        await driver.sleep(2000);
+ 
         //command untuk keluar browser
         await driver.quit();
     });
